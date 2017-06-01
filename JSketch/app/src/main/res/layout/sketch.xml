@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="55dp"
+                    android:padding="1dp"
+                    android:background="#ffffff"
+                    android:id="@+id/thick1"
+                    android:src="@drawable/thick1"/>
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="55dp"
+                    android:padding="1dp"
+                    android:background="#ffffff"
+                    android:id="@+id/thick2"
+                    android:src="@drawable/thick2"/>
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="55dp"
+                    android:padding="1dp"
+                    android:id="@+id/thick3"
+                    android:background="#ffffff"
+                    android:src="@drawable/thick3"/>
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="55dp"
+                    android:padding="1dp"
+                    android:background="#ffffff"
+                    android:id="@+id/thick4"
+                    android:src="@drawable/thick4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageButton
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/select"
+                    android:background="#ffffff"
+                    android:src="@drawable/select" />
+
+                <ImageButton
+                    android:layout_width="38dp"
+                    android:layout_height="43dp"
+                    android:id="@+id/delete"
+                    android:src="@drawable/delete"
+                    android:background="#ffffff"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageButton
+                    android:layout_width="54dp"
+                    android:layout_height="46dp"
+                    android:id="@+id/fill"
+                    android:background="#ffffff"
+                    android:src="@drawable/fill" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/orange"
+                    android:src="#ffff00"
+                    android:background="#ffff00"
+                    android:padding="8dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/blue"
+                    android:src="#0000ff"
+                    android:background="#0000ff"
+                    android:padding="8dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/red"
+                    android:src="#ff0000"
+                    android:background="#ff0000"
+                    android:padding="8dp"/>
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/green"
+                    android:src="#00ff00"
+                    android:background="#00ff00"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp">
+
+
+
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="54dp"
+                    android:id="@+id/circle"
+                    android:background="#ffffff"
+                    android:src="@drawable/circle" />
+
+                <ImageButton
+                    android:layout_width="51dp"
+                    android:layout_height="43dp"
+                    android:id="@+id/rectangle"
+                    android:src="@drawable/rectangle"
+                    android:background="#ffffff"/>
+
+                <ImageButton
+                    android:layout_width="42dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/line"
+                    android:src="@drawable/line"
+                    android:background="#ffff"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/undo"
+                    android:id="@+id/photos"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/redo"
+                    android:id="@+id/redo"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="480dp"
+        android:background="#000000"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+    <include layout="@layout/sketch_view"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
